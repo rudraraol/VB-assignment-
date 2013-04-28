@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{01F7E220-1C3D-40A6-904F-07A6EE4ACC98}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TRS.My.MyApplication</StartupObject>
+    <RootNamespace>TRS</RootNamespace>
+    <AssemblyName>TRS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TRS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TRS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmConfirmReservation.Designer.vb">
+      <DependentUpon>frmConfirmReservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirmReservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteConcert.Designer.vb">
+      <DependentUpon>frmDeleteConcert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeleteConcert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDeleteReservation.Designer.vb">
+      <DependentUpon>frmDeleteReservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDeleteReservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.vb">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogIn.Designer.vb">
+      <DependentUpon>frmLogIn.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatronDetails.Designer.vb">
+      <DependentUpon>frmPatronDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatronDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservation.Designer.vb">
+      <DependentUpon>frmReservation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchPatron.Designer.vb">
+      <DependentUpon>frmSearchPatron.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchPatron.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearchStaff.Designer.vb">
+      <DependentUpon>frmSearchStaff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearchStaff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStaffDetails.Designer.vb">
+      <DependentUpon>frmStaffDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStaffDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStaffSignUp.Designer.vb">
+      <DependentUpon>frmStaffSignUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStaffSignUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConcertInput.Designer.vb">
+      <DependentUpon>frmConcertInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConcertInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frmPatronSignUp.Designer.vb">
+      <DependentUpon>frmPatronSignUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatronSignUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRSDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TRSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TRSDataSet.vb">
+      <DependentUpon>TRSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TRSDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TRSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TRSDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TRSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TRSDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TRSDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TRSDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TRSDataSet4.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmConfirmReservation.resx">
+      <DependentUpon>frmConfirmReservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteConcert.resx">
+      <DependentUpon>frmDeleteConcert.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDeleteReservation.resx">
+      <DependentUpon>frmDeleteReservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogIn.resx">
+      <DependentUpon>frmLogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatronDetails.resx">
+      <DependentUpon>frmPatronDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservation.resx">
+      <DependentUpon>frmReservation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchPatron.resx">
+      <DependentUpon>frmSearchPatron.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearchStaff.resx">
+      <DependentUpon>frmSearchStaff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStaffDetails.resx">
+      <DependentUpon>frmStaffDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStaffSignUp.resx">
+      <DependentUpon>frmStaffSignUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConcertInput.resx">
+      <DependentUpon>frmConcertInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatronSignUp.resx">
+      <DependentUpon>frmPatronSignUp.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TRSDataSet.xsc">
+      <DependentUpon>TRSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TRSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TRSDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TRSDataSet.xss">
+      <DependentUpon>TRSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TRSDataSet1.xsc">
+      <DependentUpon>TRSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TRSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TRSDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TRSDataSet1.xss">
+      <DependentUpon>TRSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TRSDataSet2.xsc">
+      <DependentUpon>TRSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TRSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TRSDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TRSDataSet2.xss">
+      <DependentUpon>TRSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TRSDataSet3.xsc">
+      <DependentUpon>TRSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TRSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TRSDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TRSDataSet3.xss">
+      <DependentUpon>TRSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TRSDataSet4.xsc">
+      <DependentUpon>TRSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TRSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TRSDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TRSDataSet4.xss">
+      <DependentUpon>TRSDataSet4.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TRS.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
